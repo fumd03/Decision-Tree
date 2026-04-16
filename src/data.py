@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 
 
 def load_data(path, test_size, random_state):
+    path = "../data/penguins_size.csv"
     df = pd.read_csv(path)
 
     # Handle missing values
