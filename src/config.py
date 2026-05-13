@@ -10,6 +10,6 @@ MODEL_PATH = os.path.join(BASE_DIR, "models", "model.joblib")
 TEST_SIZE = 0.2
 RANDOM_STATE = 42
 
-# Decision Tree parameters
-MAX_DEPTH = 5
+
+MAX_DEPTH = 6
 MIN_SAMPLES_SPLIT = 5
