@@ -1,38 +1,76 @@
-# 🐧 Penguin Species Classification using Decision Tree
+Penguin Species Classifier
 
-This project is a **Machine Learning classification system** that predicts penguin species using physical measurements and categorical features.
+A machine learning implementation using a Decision Tree Classifier to identify penguin species based on morphological measurements and environmental data.
+📌 Project Overview
 
----
+This repository contains a streamlined end-to-end pipeline for classifying penguins into three species: Adelie, Chinstrap, and Gentoo. By leveraging the scikit-learn framework, the project demonstrates how to handle mixed data types (numerical and categorical) through automated preprocessing pipelines.
+📊 Dataset Insights
 
-## 📊 Dataset
+The model is trained on physical measurements of penguins observed in the Palmer Archipelago, Antarctica.
+Features
 
-Features used:
+    Environmental: island
 
-- island
-- culmen_length_mm
-- culmen_depth_mm
-- flipper_length_mm
-- body_mass_g
-- sex
+    Morphological:
 
-Target:
+        culmen_length_mm & culmen_depth_mm
 
-- species (Adelie, Chinstrap, Gentoo)
+        flipper_length_mm
 
----
+        body_mass_g
 
-## 🚀 Model
+    Demographic: sex
 
-- Algorithm: Decision Tree Classifier
-- Preprocessing: OneHotEncoder for categorical features
-- Framework: scikit-learn Pipeline
+Target Labels
 
----
+The classifier predicts one of the following species:
 
-## ⚙️ Installation
+    Adelie
 
-```bash
-git clone <your-repo-url>
-cd DecisionTree-Penguins
-pip install -r requirements.txt
-```
+    Chinstrap
+
+    Gentoo
+
+🚀 Model Architecture
+
+The project utilizes a robust machine learning workflow to ensure data integrity and prevent leakage:
+
+    Algorithm: DecisionTreeClassifier
+
+    Preprocessing:
+
+        OneHotEncoder used for categorical variables (island, sex).
+
+        StandardScaler (optional/internal) for numerical consistency.
+
+    Pipeline: Built using scikit-learn Pipelines to encapsulate the preprocessing and modeling steps into a single, deployable object.
+
+⚙️ Setup & Installation
+
+Ensure you have Python 3.8+ installed.
+
+    Clone the repository:
+    Bash
+
+    git clone https://github.com/your-username/DecisionTree-Penguins.git
+    cd DecisionTree-Penguins
+
+    Install dependencies:
+    Bash
+
+    pip install -r requirements.txt
+
+    Run the model:
+    Bash
+
+    python main.py
+
+🛠️ Tech Stack
+
+    Language: Python
+
+    ML Framework: scikit-learn
+
+    Data Manipulation: Pandas & NumPy
+
+    Visualization: Matplotlib / Seaborn (for tree visualization)
