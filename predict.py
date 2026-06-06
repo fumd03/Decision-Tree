@@ -10,10 +10,10 @@ model = load_model(config.MODEL_PATH)
 # Sample input
 sample = pd.DataFrame([{
     "island": "Torgersen",
-    "culmen_length_mm": 39.1,
-    "culmen_depth_mm": 18.7,
-    "flipper_length_mm": 181,
-    "body_mass_g": 3750,
+    "culmen_length_mm": 42.1,
+    "culmen_depth_mm": 16.7,
+    "flipper_length_mm": 171,
+    "body_mass_g": 3760,
     "sex": "MALE"
 }])
 
